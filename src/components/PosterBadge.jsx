@@ -1,11 +1,38 @@
-function PosterBadge({ title, children }) {
+function PosterBadge({
+  title,
+  text,
+  className = "",
+  titleClassName = "",
+  textClassName = "",
+  showLine = false,
+}) {
   return (
-    <div className="absolute top-[730px] left-[46px] w-[387px] h-[210px] flex flex-col gap-5">
-      <h2 className="w-[347px] h-[22px] text-[20px] font-semibold leading-[112%] text-white">
-        {title}
-      </h2>
+    <div className={className}>
+      {showLine ? (
+        <>
+          <h2
+            className={`text-[16px] font-bold uppercase text-[#333333] ${titleClassName}`}
+          >
+            {title}
+          </h2>
 
-      {children}
+          <div className="mt-2 w-full h-[2px] rounded-[2px] bg-[#E88F40]"></div>
+        </>
+      ) : (
+        <>
+          <h2
+            className={`text-[20px] font-semibold text-white ${titleClassName}`}
+          >
+            {title}
+          </h2>
+
+          <p
+            className={`mt-5 text-[17px] font-light leading-[28px] text-white ${textClassName}`}
+          >
+            {text}
+          </p>
+        </>
+      )}
     </div>
   );
 }
