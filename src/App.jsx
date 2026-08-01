@@ -8,7 +8,6 @@ import CTAButton from "./components/CTAButton";
 function App() {
   return (
     <PosterLayout>
-      {/* LEFT SIDE */}
       <PosterImage />
 
       <PosterHeading text="Ariel Okal" />
@@ -23,10 +22,7 @@ function App() {
 
       <CTAButton text='"Speed defines the pace, agility conquers the game."' />
 
-      {/* RIGHT COLUMN */}
       <div className="absolute top-[44px] left-[470px] w-[272px] h-[1022px] flex flex-col gap-[64px]">
-
-        {/* SPEED DYNAMO */}
         <div className="flex flex-col gap-[24px]">
           <PosterBadge
             title="Speed Dynamo"
@@ -35,7 +31,6 @@ function App() {
           />
 
           <div className="flex flex-col gap-[20px]">
-
             <div className="flex flex-col gap-[10px]">
               <h3 className="text-[16px] font-semibold leading-[28px] text-black">
                 Strength
@@ -55,13 +50,10 @@ function App() {
                 Lightning-fast speed, agile maneuvers
               </p>
             </div>
-
           </div>
         </div>
 
-        {/* AGILE MOVEMENT EXPERT */}
         <div className="flex flex-col gap-[24px]">
-
           <PosterBadge
             title="Agile Movement Expert"
             showLine={true}
@@ -69,7 +61,6 @@ function App() {
           />
 
           <div className="flex flex-col gap-[20px]">
-
             <div className="flex flex-col gap-[10px]">
               <h3 className="text-[16px] font-semibold leading-[28px] text-black">
                 Coaching Focus
@@ -101,13 +92,10 @@ function App() {
                 precise foot movements.
               </p>
             </div>
-
           </div>
         </div>
 
-        {/* TRAINING POSITIONS */}
         <div className="flex flex-col gap-[24px]">
-
           <PosterBadge
             title="Training Positions"
             showLine={true}
@@ -115,7 +103,6 @@ function App() {
           />
 
           <div className="flex flex-col gap-[20px]">
-
             <div className="flex flex-col gap-[10px]">
               <h3 className="text-[16px] font-semibold leading-[28px] text-black">
                 Main Focus
@@ -137,11 +124,8 @@ function App() {
                 <li>Trains all basketball Positions</li>
               </ul>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </PosterLayout>
   );
