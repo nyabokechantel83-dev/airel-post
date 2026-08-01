@@ -1,27 +1,26 @@
-# Ariel Okal Poster
+# Ariel Poster
 
-This project is a React recreation of the **Ariel Okal** poster from the provided Figma design.
+This project is a recreation of the **Ariel Profile Poster (No. 3)** from the provided Figma design using React and Tailwind CSS.
 
 ## Poster Chosen
 
-- Ariel Okal Poster
+**Poster:** Ariel Profile Poster (No. 3)
 
 ## Running the Project
 
-Install the dependencies:
+Clone the repository, install the dependencies, and start the development server:
 
 ```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-## Comparison
+## Poster Comparison
 
-| Original Poster | Final Poster |
-|-----------------|--------------|
-| ![Original](./original.png) | ![Final](./final.png) |
+### Original Poster
+
+![Original Poster](screenshots/original.png)
+
+### Final Poster
+
+![Final Poster](screenshots/final.png)
